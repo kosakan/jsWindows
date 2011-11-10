@@ -1,0 +1,12 @@
+jsWindows
+
+@Autor Alexej Kosack
+@Version 0.1
+@e-mail kosack@i-ways.de
+
+Windows Manager fur JS
+
+Required:
+
+jQuery > 1.6.4
+jQueryUI > 1.8.6
