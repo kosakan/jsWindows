@@ -83,11 +83,12 @@ appcode {display:none}
 var launcher = new appLauncher;
 
 var appClass1 = launcher.addAppClass('sample');
+var appClass2 = launcher.addAppClass('dummy');
 	
 //jQuery = $ = null;
 
-function newExemplar(){
-	app1 = appClass1.addApp();
+function newExemplar(class){
+	app1 = class.addApp();
 	app1.load();
 }
 
@@ -96,9 +97,14 @@ $('body').css('background','#099');
 
 <div>
 <h2>App Sample</h2>
-<a href="javascript:;" onclick="javascript: newExemplar()">NEW EXEMPLAR!</a>
+<a href="javascript:;" onclick="javascript: newExemplar(appClass1)">NEW EXEMPLAR!</a>
 </div>
+<hr />
 
+<div>
+<h2>App Dummy</h2>
+<a href="javascript:;" onclick="javascript: newExemplar(appClass2)">NEW EXEMPLAR!</a>
+</div>
 
 <p>Bla-bla-bla-d'</p>
 </body>
