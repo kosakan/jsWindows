@@ -27,7 +27,7 @@
 
 <div id="__<?= APP_ID ?>"></div>
 
-<div><a href="javascript:;" onclick="<?= APP_ID ?>.$('p').css('background','#0f0')">Gr&uuml;n</a>&nbsp;|&nbsp;<a href="javascript:;" onclick="<?= APP_ID ?>.$('p').css('background','#f00')">Rot</a></div>
+<div><a href="javascript:;" onclick="<?= APP_ID ?>.$('p').css('background','#0f0')">Gr&uuml;n</a>&nbsp;|&nbsp;<a href="javascript:;" onclick="<?= APP_ID ?>.$('p').css('background','#f00')">Rot</a>&nbsp;|&nbsp;<a href="javascript:;" onclick="jQuery('p').css('background','#f00')">Alles ROT!</a></div>
 
 
 </center>

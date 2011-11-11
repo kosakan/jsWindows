@@ -16,7 +16,7 @@ div.appWindow {
 	border-right-color: #333;
 	background:#fff;
 	display: none;
-	padding: 3px;
+	padding: 1px;
 	overflow:hidden;
 	}
 	
@@ -106,6 +106,7 @@ $('body').css('background','#099');
 <a href="javascript:;" onclick="javascript: newExemplar(appClass2)">NEW EXEMPLAR!</a>
 </div>
 
+<a href="javascript:;" onclick="$('p').css('background','#f00')">Alles ROT!</a>
 <p>Bla-bla-bla-d'</p>
 </body>
 </html>
