@@ -43,7 +43,7 @@
     </init>
     
     <destruct>
-        return confirm(this.id+':Schlie&szlig;en?'); <!-- Close confirmation -->
+        confirm(this.id+':Schlie&szlig;en?'); <!-- Close confirmation -->
     </destruct>
     
     <headertext>

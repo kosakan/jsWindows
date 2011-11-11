@@ -87,8 +87,8 @@ var appClass2 = launcher.addAppClass('dummy');
 	
 //jQuery = $ = null;
 
-function newExemplar(class){
-	class.addApp().load();
+function newExemplar(className){
+	className.addApp().load();
 }
 
 $('body').css('background','#099');

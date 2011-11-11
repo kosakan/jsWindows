@@ -22,11 +22,11 @@ function appLauncher(){
 	this.appClasses = {};	// Classes container
 	
 	// Method addAppClass
-	//@param class: name of APP class (string)
-	this.addAppClass = function(class){	
-		if(!this.appClasses[class]) 
-			this.appClasses[class] = new appClass(class);	// Create an new APP class object...
-		return this.appClasses[class]						// ...and store this in the own container
+	//@param className: name of APP class (string)
+	this.addAppClass = function(className){	
+		if(!this.appClasses[className]) 
+			this.appClasses[className] = new appClass(className);	// Create an new APP class object...
+		return this.appClasses[className]						// ...and store this in the own container
 	}
 }
 /* End of APP Launcher object */
@@ -299,5 +299,5 @@ function app(classObject) {
 // Compile a text into a function
 //@params:	text - javascript source code
 function text2func(text){
-return text ? eval('function(){'+text+'}') : null; // return compiled function or null if empty parameter
+return text ? function(){return eval(text)} : null; // return compiled function or null if empty parameter
 }
