@@ -145,8 +145,6 @@ function app(classObject) {
 			
 			// Define an JQObject (see above)
 			this.JQObject = this.jQuery(document.body.appendChild(this.container));
-					
-			this.jQuery.noConflict();	// Relinquish jQuery's control of the $ variable
 			
 			// Extend the jQuery object with a JQObject context - all calls of this.$ will use this context
 			this.$ = function(selector){ return new jQuery.fn.init(selector, this.JQObject ); };
