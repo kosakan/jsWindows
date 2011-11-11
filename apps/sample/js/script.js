@@ -3,7 +3,6 @@ function miau(obj){
 alert(obj.id+' sagt Mia-a-u!');
 }
 
-
     var d=document;
     var NN=d.layers?true:(window.opera&&!d.createComment)?true:false;
 
